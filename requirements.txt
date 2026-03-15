@@ -1,0 +1,5 @@
+telethon
+pyrofork==2.3.68
+uvloop
+TgCrypto
+cryptg

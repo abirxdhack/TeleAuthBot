@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "TeleAuthBot"
+version = "1.0.0"
+description = "A Telegram bot for session-based OTP capture supporting Telethon and Pyrogram userbots"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "abirxdhack", url = "https://github.com/abirxdhack" }
+]
+keywords = ["telegram", "bot", "telethon", "pyrogram", "otp", "userbot"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Communications :: Chat",
+]
+dependencies = [
+    "telethon==1.36.0",
+    "pyrogram==2.0.106",
+    "uvloop==0.21.0",
+    "TgCrypto==1.2.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/abirxdhack/TeleAuthBot"
+Repository = "https://github.com/abirxdhack/TeleAuthBot"
+Issues = "https://github.com/abirxdhack/TeleAuthBot/issues"
+
+[project.scripts]
+teleauthbot = "main:safe_main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["utils*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.md", "*.txt", "*.toml"]
