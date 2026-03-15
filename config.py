@@ -1,0 +1,15 @@
+BOT_TOKEN = "YOUR_BOT_TOKEN"
+BOT_API_ID = 2040
+BOT_API_HASH = "b18441a1ff607e10a989891a5462e627"
+OTP_SENDER_ID = 777000
+OTP_TIMEOUT = 60
+POLL_INTERVAL = 1.5
+
+S_IDLE = "idle"
+S_APIID_TELE = "apiid_tele"
+S_APIHASH_TELE = "apihash_tele"
+S_SESSION_TELE = "session_tele"
+S_APIID_PYRO = "apiid_pyro"
+S_APIHASH_PYRO = "apihash_pyro"
+S_SESSION_PYRO = "session_pyro"
+S_OTP = "otp"
